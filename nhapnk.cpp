@@ -14,7 +14,8 @@ int main()
         case(1):
         for(int i=0; i<n; i++){
             if (a[i] % 2 != 0) t++;
-            else if (i == (n-1)){cout<< t <<" "; return 0;}}
+            else if (i == (n-1)){cout<< t <<" "; return 0;}
+        }
         break;
        
        
@@ -22,7 +23,8 @@ int main()
         for(int i=0; i<n; i++){
             
             if (2016 % a[i] == 0) t++;
-            if (i == (n-1)){cout<< t; return 0;}}
+            if (i == (n-1)){cout<< t; return 0;}
+        }
         break;
 
 
@@ -52,12 +54,13 @@ int main()
              {
                  int tmp = a[k];
                  a[k] = a[k+1];
-                 a[k+1] = tmp;}}}
+                 a[k+1] = tmp;}
+            }
+        }
         for(int i=0; i < n; i++){
             cout<< a[i] <<" ";}
         break;
-        
-        
+                
     }
     return 0;
 }
